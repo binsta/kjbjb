@@ -1,6 +1,7 @@
 module.exports = function(app, db) {
-    app.post('/notes', (req, res) => {
+    app.post('/notes', (req, body) => {
         //We'll create the note here
-        res.send('Hello')
+        console.log(req.body)
+        res.send('Hello There')
     });
 };
